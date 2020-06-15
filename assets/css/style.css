@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+    background-color: #FED136;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 30px 40px;
+}
+
+nav .nav-brand {
+    color: #FED136;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #FED136;
+}
+
+.banner {
+    background: url('../img/bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner h2 {
+    margin-bottom: 0.5rem;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.banner button {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+.banner button:hover {
+    background: #FED136;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+.services-offers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.services-offers div {
+    padding: 0 15px;
+}
+
+.services-offers .fa {
+    background-color: #FED136;
+    color: white;
+    padding: 0 20px;
+    border-radius: 50%;
+    font-size: 3rem;
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+}
+
+.services-offers h3 {
+    margin: 20px 0;
+}
+
+.portfolio {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .card {
+    background-color: white;
+    box-shadow: 0px 0px 20px grey;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+
+.portfolio .fas {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:4rem; 
+    color:white;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .fas{
+    opacity: 1;
+    z-index: 999999;
+}
+
+.card:hover .img-container .hover{
+    opacity: 0.8;
+}
+
+.card .img-container .hover {
+    opacity: 0;
+    background-color: #FED136;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section-header{
+    text-align: center;
+}
+
+.portfolio {
+    padding: 2rem 8rem;
+}
+
+.portfolio .img-container{
+    position: relative;
+}
+
+.portfolio .img-container{
+    background: url('https://blackrockdigital.github.io/startbootstrap-agency/assets/img/portfolio/01-thumbnail.jpg');
+    background-size: cover;
+    height: 20rem;
+    width: 25rem;
+}
+
+
+.portfolio .texts {
+    padding: 2rem 0;
+}
+
+.portfolio .texts p {
+    color: grey;
+}
+
+.team {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.team .vertical-card img{
+    border-radius: 50%;
+    border: 8px rgb(204, 204, 204) solid;
+    width: 10rem;
+}
+
+.team .vertical-card .fab{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
+.contact-us {
+    margin:4rem 0;
+    background: url('../img/map-image.png');
+    background-color: black;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    padding: 5rem;
+}
+
+.contact-us form{
+    margin-top: 2rem;
+    display: flex;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    font-size: 2rem;
+}
+
+.contact-us form .three{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+
+.contact-us form .message input{
+    flex-grow: 1;
+    height: 2rem;
+    min-height: 14.58rem;
+}
+
+.contact-us .section-header{
+    color: white;
+}
+
+
+footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer  .copyright {
+    font-weight: lighter;
+}
+
+.footer  .social-icons .fa {
+    margin: 0 5px;
+}
+
+.footer .privacy a {
+    color: #FED136;
+    text-decoration: none;
+}
+
+.footer .privacy a:hover {
+    text-decoration: none;
+}
+
